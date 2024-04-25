@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="Alejandro Bartolome, Gael Suárez, Jorgelina Pestalardo, José Molina">
+    <title>RockPass</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="/img/rock-hand.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Codystar:wght@300;400&family=Palanquin:wght@100;200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Codystar:wght@300;400&family=Jersey+10+Charted&family=Palanquin:wght@100;200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Menú-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="./img/rock-hand.png" alt="A Rockear!" class="navbar-toggler-icon">
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+                    <a class="navbar-brand col-lg-3 me-0" href="#"><span>RockPass</span></a>
+                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index2.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index2.html#about-us">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index2.html#eventos">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Escenarios</a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end ">
+                        <!--MenuUsuario-->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-dark">Hola Usuario!</button>
+                            <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-expanded="false">
+                                <span class="sr-only">Menú del Usuario</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Mi Perfil</a>
+                                <a class="dropdown-item" href="#">Preferencias</a>
+                                <a class="dropdown-item bg-primary text-white">
+                                    Notificaciones <span class="badge badge-light">4</span>
+                                </a>
+                                <a class="dropdown-item" href="#">Más...</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item btn-detalle" href="index.html">Cerrar Sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <section class="h-100 h-custom">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-lg-8 col-xl-6" style="border-color: #1d1d1d;">
+                        <div class="card rounded-3">
+                            <div class="card-body p-4 p-md-5" style="background-color: #1d1d1d;">
+                                <form>
+                                    <div class="container" style="border-color: #1d1d1d;">
+                                        <h2 class="mt-5">Mi perfil</h2>
+                                        <hr>
+                                        <h4>Datos Personales:</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="nombre"
+                                                        placeholder="Nombre" required>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="apellido"
+                                                        placeholder="Apellido" required>
+                                                    </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="E-mail" required>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+
+                                        <h4>Datos de Domicilio:</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="direccion" placeholder="Dirección">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="ciudad" placeholder="Ciudad">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="pais" placeholder="País">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h4>Datos de Pago:</h4>
+                                        <div class="row">
+                                            
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control" id="tarjeta" min="10" max="30" placeholder="Nro. de tarjeta">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group checkbox-venc">
+                                                    <label for="titular" style="color: blanchedalmond;">Soy el titular</label>
+                                                    <input type="checkbox" class="checkbox-venc" id="titular">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group">
+                                                    <label for="vencimiento" style="color: blanchedalmond;">Vencimiento:</label>
+                                                    <input type="date" class="form-control" id="vencimiento">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="visa">
+                                                    <label class="form-check-label" for="inlineRadio1" style="color:blanchedalmond">Visa</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="mastercard">
+                                                    <label class="form-check-label" for="inlineRadio2" style="color: blanchedalmond;">Mastercard</label>
+                                                </div>
+
+                                            </div>
+                                        </div>    
+                                         <div class="row">       
+                                            
+                                            <div class="col">
+
+                                                <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                                        class="btn btn-detalle">Enviar</button>
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://facebook.com/" target="_blank"
+                                    rel="noopener">Facebook</a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/" target="_blank"
+                                    rel="noopener">Twitter</a></li>
+                            <li class="list-inline-item"><a href="https://instagram.com/" target="_blank"
+                                    rel="noopener">Instagram</a></li>
+                            <li class="list-inline-item"><a href="https://youtube.com/" target="_blank"
+                                    rel="noopener">YouTube</a></li>
+                        </ul>
+                        <p class="derechos">Derechos reservados &copy; 2024 RockPass</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="javascript/productos-efecto.js"></script>
+
+        <!-- Bootstrap JS -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>

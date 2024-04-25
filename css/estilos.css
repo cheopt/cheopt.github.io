@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    cursor: url(../img/cursor-elemento.png), auto;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*NAV - MENÚ */
+.navbar-custom {
+    background-color: #a50a0a;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: #F6F2E9;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    margin-right: 20px;
+}
+
+
+body {
+    background-color: #1d1d1d;
+    cursor: url(../img/cursor-siempre.png), auto;
+}
+/*HOME*/
+
+.carousel-title {
+    position: absolute;
+    top: 20%;
+    color: #f8f9fa;
+    padding-left: 30px;
+}
+
+
+h1 {
+    font-family: "Bungee", sans-serif;
+    font-size: 200px;
+    margin:0;
+}
+
+.carousel-title>p {
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+.home-rockpass {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+/*Nosotros*/
+.about-us {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 150px;
+    color: #f8f9fa;
+}
+
+/*eventos*/
+
+
+h2,
+h3 {
+    font-family: "Bungee", sans-serif;
+    color: #F6F2E9;
+}
+
+h4 {
+    font-family: "Bungee", sans-serif;
+    color: #c20205;
+}
+
+span {
+    font-family: "Bungee", sans-serif;
+}
+
+.btn-detalle {
+    background-color: #F6F2E9;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; 
+    cursor: url(../img/cursor-elemento.png);
+    border-radius: 15px;
+    padding: 5px 15px
+}
+
+.btn-detalle:hover {
+    background-color: #c20205;
+    color: #f8f9fa;
+}
+
+.evento-img:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: #1d1d1d;
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    color: #F6F2E9;
+}
+
+.card-body p {
+    padding: 0;
+}
+
+.card-img-top{
+    transition: transform 0.3s ease; 
+    border-radius: 20px;
+}
+.card-img-top:hover{
+    transform: scale(0.9);
+}
+
+.glass {
+    background: linear-gradient(150deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.search-bar h3 {
+    padding: 15px;
+}
+
+.productos {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.productos.mostrar  {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*detalle del producto*/
+.detalle-producto{
+    width: 100%;
+    height: 100vh;
+}
+
+.evento-info{
+    color: #f8f9fa;
+    margin-top: 20px;
+}
+
+.evento-info > h1 {
+    font-size: 30px;
+    color: #F6F2E9; 
+    transition: color 0.3s ease; 
+}
+
+.evento-info > h1:hover {
+    color: #c20205; 
+}
+
+
+.btn-comprar{
+    background-color: #c20205;
+    color: #f8f9fa;
+    cursor: url(../img/cursor-elemento.png);
+}
+
+.btn-comprar:hover {
+    background-color: #02c22f;
+    color: #f8f9fa;
+}
+
+.evento-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 20px; 
+}
+
+/*Página de contacto*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.texto-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    color:#f8f9fa;
+    padding-bottom: 10px;
+}
+
+.texto-contacto h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.texto-contacto p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+form .btn-enviar {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    border: none;
+}
+
+input, textarea {
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: #1d1d1d;
+    border: 2px solid #851b1b;
+    font-size: 1em;
+    color: #f8f9fa;
+    margin: 10px 10px;
+    font-family: Helvetica, sans-serif;
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(205, 205, 205);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+#boton-enviar { 
+    padding: 8px 20px;
+    background-color: #851b1b;
+    border: none;
+}
+
+#boton-enviar:hover {
+    background-color: #cb2a2a;
+}
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #f8f9fa;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 20px;
+}
+
+/*footer*/
+
+.derechos{
+    color: #f8f9fa;
+}
+
+.list-inline-item a {
+    color: #c20205;
+    text-decoration: none;
+    margin:0;
+    padding-bottom: 0;
+}
+
+.list-inline-item > a:visited{
+    color: #c20205;
+    text-decoration: none;
+}
+
+.list-inline {
+    margin: 0;
+}
+/*acá se puede modificar todo lo que sea menor a 1440*/
+
+@media screen and (max-width: 1440px) {
+    .home-rockpass {
+        width: 100%;
+        height: fit-content;
+    }
+
+    h1 {
+        font-size: 5em;
+    }
+
+    p {
+        font-size: 0.5em;
+    }
+
+    .about-us {
+        width: 100%;
+        height: fit-content;
+        margin: 20px;
+        font-size: 2em;
+    }
+
+    .carousel-title {
+        position: absolute;
+        bottom: 90%;
+    }
+
+    .carousel-title p {
+        font-size: 1em;
+    }
+
+    .card-body {
+        font-size: 2em;
+    }
+
+    .form-check-label {
+        font-size: 0.7em;
+    }
+
+    .form-group label {
+        font-size: 0.7em;
+    } 
+
+}
+/*acá se puede modificar todo lo que sea menor a 467, es decir celular*/
+
+@media screen and (max-width: 467px) {
+    .d-lg-flex {
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        font-size: 3em;
+    }
+
+    .home-rockpass {
+        width: 100%;
+        height: fit-content;
+    }
+    .detalle-producto{
+        width: 100%;
+        height: fit-content;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+
+    .carousel-title {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        color: #f8f9fa;
+        z-index: 1;
+    }
+
+    .carousel-title>p {
+        font-size: 1em;
+        margin:0;
+    }
+
+    .about-us {
+        margin: 100px 0;
+        font-size: 1.5em;
+        min-width: 0.5vw;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .evento-info {
+        padding-top: 30px;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-check-label {
+        font-size: 0.6em;
+    }
+
+    .form-group label {
+        font-size: 0.6em;
+    } 
+
+}
