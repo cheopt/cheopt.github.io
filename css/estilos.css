@@ -274,6 +274,11 @@ form {
     padding-bottom: 20px;
 }
 
+#about-us iframe {
+    width: 500px;
+    height: 400px;
+}
+
 /*footer*/
 
 .derechos{
@@ -339,6 +344,26 @@ form {
         font-size: 0.7em;
     } 
 
+    .texto-contacto {
+        max-width: 750px;
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    .texto-contacto h1 {
+        font-size: 2em;
+    }
+
+    .flex-container {
+        padding-left: 20px;
+        max-width: 750px;
+        flex-direction: column;
+    }
+
+    .flex-container form {
+        max-width: 750px;
+    }
+
 }
 /*acá se puede modificar todo lo que sea menor a 467, es decir celular*/
 
@@ -364,6 +389,7 @@ form {
 
     footer{
         margin-top: 20px;
+        max-width: 350px;
     }
 
     .carousel-title {
@@ -410,5 +436,48 @@ form {
     .form-group label {
         font-size: 0.6em;
     } 
+
+
+    .texto-contacto {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .texto-contacto h1{
+        font-size: 2.5em;
+        max-width: 320px;
+    }
+
+    .texto-contacto p {
+        font-size: 0.8em;
+        max-width: 320px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        max-width: 310px;
+        padding-left: 10px;
+    }
+
+    .flex-container form {
+        max-width: 310px;
+    }
+
+    .flex-container input, textarea {
+        margin-left: 0;
+    }
+
+    #about-us {
+        margin-top: 30px;
+        max-width: 310px;
+    }
+
+    #about-us iframe {
+        width: 310px;
+        height: 400px;
+    }
 
 }
