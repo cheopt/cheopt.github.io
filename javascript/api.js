@@ -43,7 +43,7 @@ function UserList(data) {
   const divError = document.getElementById("users");
 
   const userListTable = `
-        <table class="table">
+        <table class="table"  style="color: #F6F2E9;">
             <thead>
                 <tr>
                 <th scope="col">#</th>
