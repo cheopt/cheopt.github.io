@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPass</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="/img/rock-hand.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Codystar:wght@300;400&family=Palanquin:wght@100;200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Codystar:wght@300;400&family=Jersey+10+Charted&family=Palanquin:wght@100;200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Menú-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <a class="navbar-brand" href="./index.html"><span>RockPass</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Incio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrese1.html">Registrese</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conexión API</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--ConexionAPI-->
+    <main>
+        <div class="container">
+            <div class="col-12">
+                <h2>Conexion API de Usuarios</h2>
+                <hr>
+            </div>            
+            <div id="divError" class="col-6"></div>
+            <div class="row mt-5">
+                <div class="col-3">
+                    <button class="btn btn-success" onclick="findUsers()">
+                        Buscar Usuarios
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div id="users"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="h-100 h-custom">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-12 text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+                            </li>
+                        </ul>
+                        <p class="derechos">Derechos reservados &copy; 2024 RockPass</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript/api.js"></script>
+</body>
+
+</html>
